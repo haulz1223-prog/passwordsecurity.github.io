@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Tester</h1>
+        <input type="password" id="password" placeholder="Enter your password" oninput="checkPasswordStrength()">
+        <div id="strength-bar" class="strength-bar"></div>
+        <p id="feedback"></p>
+        <button id="check-common-password" onclick="checkCommonPassword()">Check if Common Password</button>
+        <p id="common-password-result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
