@@ -8,14 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Password Strength Tester</h1>
-        <input type="password" id="password" placeholder="Enter your password" oninput="checkPasswordStrength()">
-        <div id="strength-bar" class="strength-bar"></div>
-        <p id="feedback"></p>
-        <button id="check-common-password" onclick="checkCommonPassword()">Check if Common Password</button>
-        <p id="common-password-result"></p>
+        <h1>Password Strength Checker</h1>
+        <div class="input-container">
+            <input type="password" id="password" placeholder="Enter your password" oninput="checkPasswordStrength()">
+            <div id="strength-bar" class="strength-bar"></div>
+            <p id="feedback" class="feedback-text">Your password strength will appear here.</p>
+        </div>
+        
+        <div class="common-password-section">
+            <button id="check-common-password" onclick="checkCommonPassword()">Check if Common Password</button>
+            <p id="common-password-result" class="common-password-feedback"></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
